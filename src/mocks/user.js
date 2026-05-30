@@ -1,0 +1,56 @@
+export const mockUser = {
+  id: 1,
+  name: 'Alex Rivera',
+  email: 'alex.rivera@email.com',
+  phone: '+1 555-0123',
+  avatar: null,
+  paymentMethods: [
+    { id: 1, type: 'visa', last4: '4242', expiry: '12/26', isDefault: true },
+    { id: 2, type: 'mastercard', last4: '8888', expiry: '09/25', isDefault: false },
+  ],
+  addresses: [
+    {
+      id: 1,
+      label: 'Home',
+      street: '123 Maple Street',
+      city: 'New York',
+      state: 'NY',
+      zip: '10001',
+      country: 'US',
+      isDefault: true,
+    },
+    {
+      id: 2,
+      label: 'Work',
+      street: '456 Oak Avenue',
+      city: 'New York',
+      state: 'NY',
+      zip: '10002',
+      country: 'US',
+      isDefault: false,
+    },
+  ],
+  reservations: [
+    {
+      id: 'ORD-001',
+      date: '2025-05-10',
+      status: 'delivered',
+      items: [{ productId: 1, name: 'Spider-Man #1 Reprint', qty: 1, price: 14.99 }],
+      total: 14.99,
+      address: '123 Maple Street, New York NY 10001',
+      payment: 'Visa ••••4242',
+    },
+    {
+      id: 'ORD-002',
+      date: '2025-05-20',
+      status: 'processing',
+      items: [
+        { productId: 7, name: 'Hero Graphic Tee', qty: 2, price: 29.99 },
+        { productId: 9, name: 'Villain Snapback Cap', qty: 1, price: 24.99 },
+      ],
+      total: 84.97,
+      address: '456 Oak Avenue, New York NY 10002',
+      payment: 'Mastercard ••••8888',
+    },
+  ],
+};
