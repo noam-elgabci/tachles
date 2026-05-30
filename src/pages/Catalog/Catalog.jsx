@@ -146,4 +146,6 @@ export default function Catalog() {
           ))}
         </div>
       )}
-   
+    </div>
+  );
+}
